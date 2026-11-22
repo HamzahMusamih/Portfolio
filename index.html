@@ -180,9 +180,14 @@
           <span class="sheet__ctx">Formula Student UK · July 2026</span>
         </header>
         <h3 class="sheet__title">FSUK 2026 Concept Class</h3>
-        <p class="sheet__sub">As Technical Director, I led the technical side of HTU Racing's entry at Silverstone. The team finished 4th overall with podiums in three events.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Lead the technical side of HTU Racing's Concept Class entry at FSUK 2026.</dd></div>
+          <div><dt>Challenge</dt><dd>Make every system's design line up and hold up in front of industry judges, across the design, cost and AI events.</dd></div>
+          <div><dt>Solution</dt><dd>Coordinated research and design, relayed technical data to the manufacturing team, devised the cost-cutting plan, and presented the battery selection and the AI system's technical side.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>4th</b> overall · <b>1st</b> Cost &amp; Manufacturing · <b>2nd</b> Engineering Design · <b>3rd</b> Real World AI</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>Concept Class teams are judged on the design, cost and business case of a car before it is built. My job was to make the design hang together across every system, and to make sure the people presenting it could defend it.</p>
             <table class="results">
@@ -194,12 +199,6 @@
               </tbody>
             </table>
           </div>
-          <dl class="numbers">
-            <div><dt>4th</dt><dd>overall in the Concept Class</dd></div>
-            <div><dt>1st</dt><dd>Cost &amp; Manufacturing</dd></div>
-            <div><dt>2nd</dt><dd>Engineering Design</dd></div>
-            <div><dt>3rd</dt><dd>Real World AI</dd></div>
-          </dl>
         </div>
       </article>
 
@@ -210,19 +209,19 @@
           <span class="sheet__ctx">Capstone · 2025–26</span>
         </header>
         <h3 class="sheet__title">Seawater electrolyzer &amp; degradation model</h3>
-        <p class="sheet__sub">A pilot alkaline electrolyzer that makes hydrogen from Red Sea water, with a Simulink model that predicts how fast its electrodes wear.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Make green hydrogen directly from seawater for an unmanned surface vessel.</dd></div>
+          <div><dt>Challenge</dt><dd>Chloride ions in seawater pit and destroy standard electrodes within hours.</dd></div>
+          <div><dt>Solution</dt><dd>A NiFe-phosphate coated anode, a laser-cut test cell, and a Simulink model that predicts electrode wear.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd>Coated anode lasted <b>3.5×</b> longer at 20 A · bare electrode lost <b>36.4%</b> chloride health in the first simulated hour · model matched the analytical solution to <b>4 d.p.</b></dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>Seawater destroys ordinary electrodes: chloride ions pit the anode within hours. Our four-person team coated a stainless-steel mesh anode with a NiFe-phosphate layer and built a laser-cut test cell to compare it against a bare electrode.</p>
             <p>I built the model. A Simscape electrolyzer (electrical, thermal-liquid and gas networks) feeds current, voltage and temperature into three Arrhenius degradation pathways: kinetic wear, chloride pitting and oxide growth. Their combined health factor is fed back into the circuit as a rising series resistance, so the simulated cell loses output as it degrades.</p>
             <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Electrochemistry</li><li>SolidWorks</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>3.5×</dt><dd>longer at 20 A for the coated anode on the bench; the model, built independently, predicted the same ratio</dd></div>
-            <div><dt>36.4%</dt><dd>chloride health lost by the bare electrode in the first simulated hour</dd></div>
-            <div><dt>4 d.p.</dt><dd>match between model output and the analytical solution</dd></div>
-          </dl>
         </div>
 
         <figure class="viewer">
@@ -243,26 +242,29 @@
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Battery cell selection &amp; modelling</h3>
-        <p class="sheet__sub">Choosing the cells for the team's second EV from 20 candidates, using physics-based pack simulation, then extending the models into on-car state-of-charge estimation.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Choose the best cells for the team's second EV battery pack.</dd></div>
+          <div><dt>Challenge</dt><dd>Usable cell models don't exist, and none capture pack geometry, cooling or a real endurance load.</dd></div>
+          <div><dt>Solution</dt><dd>Built cell and pack models from datasheets, drove them with recorded track data, and compared the finalists in Simscape and Voltt.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>20</b> cells screened · simulation runtime cut <b>90%</b> · <b>60%</b> more data behind the decision</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>Usable cell models don't exist for most candidate cells, and none capture full-pack geometry and cooling. I extracted look-up tables from datasheets, built packs in MATLAB's Battery Builder, and drove them with throttle and brake traces recorded from an FSUK track in Assetto Corsa, reshaped into real power demand.</p>
             <p>I ranked the cells against pack targets (under 30 kg, over 5.6 kWh, over 60 kW continuous), then ran the finalists through a full endurance event in Simscape and Voltt, comparing state of charge, temperature rise, voltage sag and peak-power maps. The Samsung 50U and EVE 50PL came out on top; I presented this selection to the judges at FSUK 2026.</p>
             <p>I then fitted 2RC equivalent-circuit parameters from virtual pulse tests at nine temperatures (20–60 °C). The resulting tables feed an Extended Kalman Filter for SOC estimation on a 96s4p NMC pack.</p>
             <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Battery Builder</li><li>Voltt</li><li>2RC ECM + EKF</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>−90%</dt><dd>simulation runtime after reworking the cell models and solver</dd></div>
-            <div><dt>+60%</dt><dd>analytical data behind the cell selection</dd></div>
-            <div><dt>20</dt><dd>cylindrical cells screened before simulation</dd></div>
-          </dl>
         </div>
 
         <div class="gallery">
           <button class="shot" data-full="assets/img/battery-1.webp"><img src="assets/img/battery-1.webp" alt="Cell discharge curves at several C-rates" loading="lazy"><span>Cell discharge data</span></button>
           <button class="shot" data-full="assets/img/battery-2.webp"><img src="assets/img/battery-2.webp" alt="Battery pack model built with Battery Builder" loading="lazy"><span>Pack model</span></button>
           <button class="shot" data-full="assets/img/battery-3.webp"><img src="assets/img/battery-3.webp" alt="Simulation environment" loading="lazy"><span>Simulation environment</span></button>
+          <button class="shot" data-full="assets/img/battery-4.webp"><img src="assets/img/battery-4.webp" alt="Voltt: pack temperature over an endurance run for four candidate cells" loading="lazy"><span>Voltt: pack temperature, endurance</span></button>
+          <button class="shot" data-full="assets/img/battery-5.webp"><img src="assets/img/battery-5.webp" alt="Voltt: pack terminal voltage over an endurance run" loading="lazy"><span>Voltt: terminal voltage</span></button>
+          <button class="shot" data-full="assets/img/battery-6.webp"><img src="assets/img/battery-6.webp" alt="Voltt: peak power map against state of charge and temperature" loading="lazy"><span>Voltt: peak power map</span></button>
         </div>
       </article>
 
@@ -273,19 +275,19 @@
           <span class="sheet__ctx">Formula Student · Digital twin</span>
         </header>
         <h3 class="sheet__title">Tyre model for the digital twin</h3>
-        <p class="sheet__sub">A Magic Formula 6.1 model of the team's Hoosier 16×7.5-10 R20 tyre, fitted from Tyre Test Consortium bench data, so the vehicle simulation corners and brakes on a real tyre.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Give the digital twin a realistic tyre model.</dd></div>
+          <div><dt>Challenge</dt><dd>Raw bench data is noisy and incomplete, with no drive/brake data for our tyre size.</dd></div>
+          <div><dt>Solution</dt><dd>A nine-stage MATLAB cleaning pipeline and a Magic Formula 6.1 fit, borrowing the combined-slip shape from a similar tyre.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>9</b>-stage pipeline · <b>6</b> fitted force and moment models · one <b>.tir</b> file read directly by the vehicle simulation</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>Raw bench data can't be fitted as delivered: it contains aborted runs, transitions between conditions, pressure dips and machine vibration, and there is no drive/brake data at all for our tyre size. I wrote a MATLAB pipeline that cleans it, cuts it into sweeps, groups the test conditions, rejects impure samples and filters the once-per-revolution ripple, then hands SI/ISO data to the open-source Magic Formula Tyre Tool.</p>
             <p>For combined slip I borrowed drive/brake runs from an 18×6.0 tyre and scaled its lateral force to match ours at zero slip, so the fit learns only the shape of the grip trade-off, not the other tyre's grip level. A custom parser and start-up checker let teammates re-fit the model themselves.</p>
             <ul class="tags"><li>MATLAB</li><li>Magic Formula 6.1</li><li>FSAE TTC data</li><li>Signal processing</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>9</dt><dd>stages in the data-preparation pipeline</dd></div>
-            <div><dt>6</dt><dd>force and moment fits: pure and combined Fx, Fy, plus Mz and Mx</dd></div>
-            <div><dt>.tir</dt><dd>output, read directly by the vehicle simulation</dd></div>
-          </dl>
         </div>
 
         <figure class="pipeline">
@@ -312,18 +314,18 @@
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Tractive-system accumulator container</h3>
-        <p class="sheet__sub">The crash-rated box that holds the battery pack and its high-voltage safety systems.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>A light, crash-rated container for the battery pack and its high-voltage safety systems.</dd></div>
+          <div><dt>Challenge</dt><dd>The chassis was designed before the accumulator was sized, leaving a volume never meant for it.</dd></div>
+          <div><dt>Solution</dt><dd>Designed the ideal enclosure first, then cut it down to fit the chassis while keeping a safety margin.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>40%</b> lighter than previous designs · factor of safety <b>1.55</b> under crash loads · <b>100%</b> of components fitted</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>The chassis had been designed before the accumulator was sized, so everything had to fit a volume that was never meant for it, and the container still had to survive crash loads. I first designed the ideal enclosure for the pack and its safety devices, then cut it down to the chassis, trading some ease of assembly and maintenance for fit while keeping a margin in case the built chassis differed from CAD.</p>
             <ul class="tags"><li>SolidWorks</li><li>Ansys FEA</li><li>FSAE EV rules</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>−40%</dt><dd>mass against previous designs</dd></div>
-            <div><dt>1.55</dt><dd>factor of safety under crash loads (FEA)</dd></div>
-            <div><dt>100%</dt><dd>of components fitted inside the chassis envelope</dd></div>
-          </dl>
         </div>
 
         <div class="gallery">
@@ -340,18 +342,24 @@
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Differential sprocket adapter</h3>
-        <p class="sheet__sub">A lightweight replacement for the bulky part linking the driven sprocket to the limited-slip differential.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Replace the supplier's bulky sprocket-to-differential adapter with a light, strong part.</dd></div>
+          <div><dt>Challenge</dt><dd>Over 85% mass reduction with tight bolt tolerances, and no CAD model of the sprocket.</dd></div>
+          <div><dt>Solution</dt><dd>Measured and verified the bolt pattern, topology-optimised under worst-case torque, redrew it for CNC and checked it in FEA.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>92.7%</b> lighter · factor of safety <b>3.8</b> · bolt holes within tolerance</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>There was no CAD model of the sprocket, so I measured the bolt pattern by hand, modelled it, and checked it against the real part with a laser-cut cardboard template. A topology optimisation under worst-case torque (motor peak × 3.57 ratio) showed where material could go; I redrew the part for CNC machining and verified it in FEA.</p>
             <ul class="tags"><li>Fusion 360</li><li>SolidWorks FEA</li><li>DFM for CNC</li><li>Reverse engineering</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>−92.7%</dt><dd>mass against the supplied part</dd></div>
-            <div><dt>3.8</dt><dd>factor of safety, kept high because a failure can't be fixed trackside</dd></div>
-          </dl>
         </div>
+
+        <figure class="viewer viewer--part">
+          <model-viewer src="assets/models/sprocket.glb" alt="3D model of the differential sprocket adapter" camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" interaction-prompt="none" shadow-intensity="0.7" exposure="1.1" camera-orbit="20deg 55deg 105%" field-of-view="26deg" tone-mapping="neutral" environment-image="neutral" disable-zoom></model-viewer>
+          <figcaption><span>Final design. Drag to rotate.</span><span class="mono">Designed for CNC milling</span></figcaption>
+        </figure>
 
         <div class="gallery">
           <button class="shot" data-full="assets/img/sprocket-1.webp"><img src="assets/img/sprocket-1.webp" alt="Baseline weak-point drawing" loading="lazy"><span>Baseline drawing</span></button>
@@ -367,17 +375,18 @@
           <span class="sheet__ctx">Venture concept</span>
         </header>
         <h3 class="sheet__title">Virtual power plant dispatch optimiser</h3>
-        <p class="sheet__sub">Optimisation software for batteries and rooftop PV at commercial sites in Jordan, shifting evening peak load onto stored solar.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Cut commercial sites' electricity bills by shifting evening peak load onto stored solar.</dd></div>
+          <div><dt>Challenge</dt><dd>Manual battery dispatch leaves an estimated 15–20% of time-of-use savings unused.</dd></div>
+          <div><dt>Solution</dt><dd>Specified an hourly mixed-integer optimiser that respects battery limits and is benchmarked against a PV-first baseline.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd>Targets <b>8–15%</b> peak-period bill reduction at zero customer capex · exploits a <b>25–34%</b> tariff gap</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>I came up with the venture idea and specified the optimiser behind it: an hourly mixed-integer linear program over 24 hours that decides every flow between grid, PV, battery and load to minimise the bill under time-of-use tariffs. It respects state-of-charge and power limits, round-trip efficiency, and never charges and discharges at once. Every run is compared with a PV-first baseline, so savings are measured rather than assumed.</p>
             <ul class="tags"><li>MILP</li><li>PuLP / CBC</li><li>Streamlit + Plotly</li><li>Energy economics</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>8–15%</dt><dd>target peak-period bill reduction, at zero customer capex</dd></div>
-            <div><dt>25–34%</dt><dd>time-of-use price gap exploited (Jordan, medium industry)</dd></div>
-          </dl>
         </div>
 
         <div class="gallery">
@@ -394,18 +403,18 @@
           <span class="sheet__ctx">TE Connectivity AI Cup</span>
         </header>
         <h3 class="sheet__title">AI process control for PTFE liner yield</h3>
-        <p class="sheet__sub">A failure-aware, engineering-validated AI workflow to cut scrap in medical catheter-liner manufacturing.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Raise yield in PTFE catheter-liner manufacturing.</dd></div>
+          <div><dt>Challenge</dt><dd>Hidden multi-parameter interactions and noisy data that throw up misleading correlations.</dd></div>
+          <div><dt>Solution</dt><dd>A causal AI workflow with an engineering-validation layer that kept only physically grounded process levers.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>−6.4 pp</b> yield loss · <b>~$2.9M</b> estimated yearly savings · <b>~46%</b> fewer PTFE failures</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>With team Vector, I defined the AI workflow and owned its engineering validation. We modelled the process as a causal chain (process parameters → material properties → failure modes), then layered correlation, mediation and random-forest sensitivity analysis. Every significant link was checked against PTFE material science to discard statistical artefacts, leaving one controlled operating procedure.</p>
             <ul class="tags"><li>Causal modelling</li><li>Random forest</li><li>Engineering validation</li><li>DoE / SOPs</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>−6.4 pp</dt><dd>yield loss</dd></div>
-            <div><dt>~$2.9M</dt><dd>estimated savings per year, 61-day payback</dd></div>
-            <div><dt>~46%</dt><dd>fewer PTFE failures</dd></div>
-          </dl>
         </div>
 
         <div class="gallery">
@@ -422,17 +431,18 @@
           <span class="sheet__ctx">Design project</span>
         </header>
         <h3 class="sheet__title">Residential PV system</h3>
-        <p class="sheet__sub">A rooftop system sized to cover a household's yearly consumption, from load analysis to bill of materials.</p>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Cover a household's yearly electricity use with a rooftop PV system.</dd></div>
+          <div><dt>Challenge</dt><dd>Limited roof space, with water tanks sitting in the best positions.</dd></div>
+          <div><dt>Solution</dt><dd>Load analysis, a SketchUp roof model and PVsyst shading and yield simulation; moved rooftop equipment to fit the array.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd>Only <b>6%</b> of yearly yield lost to shading · <b>550 JD</b>/kWp, within market cost</dd></div>
+        </dl>
 
-        <div class="sheet__grid">
+        <div class="sheet__detail">
           <div class="sheet__text">
             <p>I logged every appliance to build the household load profile, modelled the roof and its water tanks in SketchUp, and ran shading, loss and yield analysis in PVsyst. Some rooftop equipment had to move to fit the array in its best position; loss calculations also set where the inverter went to balance DC and AC cable runs.</p>
             <ul class="tags"><li>PVsyst</li><li>SketchUp</li><li>Load analysis</li><li>Shading &amp; losses</li></ul>
           </div>
-          <dl class="numbers">
-            <div><dt>6%</dt><dd>of yearly yield lost to shading, after optimising placement, azimuth and tilt</dd></div>
-            <div><dt>550 JD</dt><dd>per kWp, within market cost</dd></div>
-          </dl>
         </div>
 
         <div class="gallery">
