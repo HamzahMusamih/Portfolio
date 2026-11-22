@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/style.css?v=202611230008">
+<link rel="stylesheet" href="assets/css/style.css?v=202611230013">
 <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
@@ -136,7 +136,7 @@
         </li>
 
         <li class="tl reveal">
-          <div class="tl__when" data-start="2023-11">Nov 2023 — 2025<span class="tl__dur"></span></div>
+          <div class="tl__when" data-start="2023-11" data-end="2025-01">Nov 2023 — Jan 2025<span class="tl__dur"></span></div>
           <div class="tl__body">
             <h3>President &amp; Debater</h3>
             <p class="tl__org">HTU Debate Club</p>
@@ -364,19 +364,19 @@
           <div><dt>Goal</dt><dd>Replace the supplier's bulky sprocket-to-differential adapter with a light, strong part.</dd></div>
           <div><dt>Challenge</dt><dd>Over 85% mass reduction with tight bolt tolerances, and no CAD model of the sprocket.</dd></div>
           <div><dt>Solution</dt><dd>Measured and verified the bolt pattern, topology-optimised under worst-case torque, redrew it for CNC and checked it in FEA.</dd></div>
-          <div class="brief__res"><dt>Results</dt><dd><b>92.7%</b> lighter · factor of safety <b>3.8</b> · bolt holes within tolerance</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>92.7%</b> lighter · factor of safety <b>3.8</b> on the manufactured part · bolt holes within tolerance</dd></div>
         </dl>
 
         <div class="sheet__detail">
           <div class="sheet__text">
-            <p>There was no CAD model of the sprocket, so I measured the bolt pattern by hand, modelled it, and checked it against the real part with a laser-cut cardboard template. A topology optimisation under worst-case torque (motor peak × 3.57 ratio) showed where material could go; I redrew the part for CNC machining and verified it in FEA.</p>
+            <p>There was no CAD model of the sprocket, so I measured the bolt pattern by hand, modelled it, and checked it against the real part with a laser-cut cardboard template. A topology optimisation under worst-case torque (motor peak × 3.57 ratio) showed where material could go; I redrew the part for CNC machining and verified it in FEA. The manufactured part has a factor of safety of 3.8, higher than the optimum because the available mill couldn't produce the fully optimised shape.</p>
             <ul class="tags"><li>Fusion 360</li><li>SolidWorks FEA</li><li>DFM for CNC</li><li>Reverse engineering</li></ul>
           </div>
         </div>
 
         <figure class="viewer viewer--part">
           <model-viewer src="assets/models/sprocket.glb" alt="3D model of the differential sprocket adapter" camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" interaction-prompt="none" shadow-intensity="0.7" exposure="0.85" camera-orbit="20deg 55deg 105%" field-of-view="26deg" tone-mapping="neutral" environment-image="neutral" disable-zoom></model-viewer>
-          <figcaption><span>Final design. Drag to rotate.</span><span class="mono">Designed for CNC milling</span></figcaption>
+          <figcaption><span>Manufactured design. Drag to rotate.</span><span class="mono">Designed for CNC milling</span></figcaption>
         </figure>
 
         <div class="gallery">
@@ -552,7 +552,6 @@
       <div>
         <p class="label">Contact</p>
         <h2>Let's talk.</h2>
-        <p class="contact__lede">Open to master's study from Fall 2027 and to engineering internships in EV powertrain, battery systems and energy storage.</p>
       </div>
       <ul class="contact__links">
         <li><span class="mono">Email</span><a href="mailto:Hamzah.W.Musamih@gmail.com">Hamzah.W.Musamih@gmail.com</a></li>
@@ -571,6 +570,6 @@
   <img alt="">
 </dialog>
 
-<script src="assets/js/main.js?v=202611230008"></script>
+<script src="assets/js/main.js?v=202611230013"></script>
 </body>
 </html>
