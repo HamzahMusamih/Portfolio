@@ -165,6 +165,8 @@ p { margin: 0 0 1em; }
 
 /* gallery */
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px 16px; }
+.gallery--2 { grid-template-columns: repeat(2, 1fr); }
+.gallery--2 .shot img { aspect-ratio: 16 / 9; }
 .shot {
   all: unset; cursor: zoom-in; display: flex; flex-direction: column; gap: 10px;
 }
