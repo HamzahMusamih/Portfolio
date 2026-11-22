@@ -176,7 +176,7 @@
       <!-- 01 FSUK 2026 -->
       <article class="sheet reveal" id="fsuk">
         <header class="sheet__head">
-          <span class="sheet__no">01 / 09</span>
+          <span class="sheet__no">01 / 10</span>
           <span class="sheet__ctx">Formula Student UK · July 2026</span>
         </header>
         <h3 class="sheet__title">FSUK 2026 Concept Class</h3>
@@ -205,7 +205,7 @@
       <!-- 01 ELECTROLYZER -->
       <article class="sheet reveal" id="electrolyzer">
         <header class="sheet__head">
-          <span class="sheet__no">02 / 09</span>
+          <span class="sheet__no">02 / 10</span>
           <span class="sheet__ctx">Capstone · 2025–26</span>
         </header>
         <h3 class="sheet__title">Seawater electrolyzer &amp; degradation model</h3>
@@ -238,7 +238,7 @@
       <!-- 02 BATTERY -->
       <article class="sheet reveal" id="battery">
         <header class="sheet__head">
-          <span class="sheet__no">03 / 09</span>
+          <span class="sheet__no">03 / 10</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Battery cell selection &amp; modelling</h3>
@@ -271,7 +271,7 @@
       <!-- 04 TYRE -->
       <article class="sheet reveal" id="tyre">
         <header class="sheet__head">
-          <span class="sheet__no">04 / 09</span>
+          <span class="sheet__no">04 / 10</span>
           <span class="sheet__ctx">Formula Student · Digital twin</span>
         </header>
         <h3 class="sheet__title">Tyre model for the digital twin</h3>
@@ -310,7 +310,7 @@
       <!-- 03 TSAC -->
       <article class="sheet reveal" id="tsac">
         <header class="sheet__head">
-          <span class="sheet__no">05 / 09</span>
+          <span class="sheet__no">05 / 10</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Tractive-system accumulator container</h3>
@@ -338,7 +338,7 @@
       <!-- 04 SPROCKET -->
       <article class="sheet reveal" id="sprocket">
         <header class="sheet__head">
-          <span class="sheet__no">06 / 09</span>
+          <span class="sheet__no">06 / 10</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Differential sprocket adapter</h3>
@@ -371,7 +371,7 @@
       <!-- 05 VPP -->
       <article class="sheet reveal" id="vpp">
         <header class="sheet__head">
-          <span class="sheet__no">07 / 09</span>
+          <span class="sheet__no">07 / 10</span>
           <span class="sheet__ctx">Venture concept</span>
         </header>
         <h3 class="sheet__title">Virtual power plant dispatch optimiser</h3>
@@ -399,7 +399,7 @@
       <!-- 06 TE -->
       <article class="sheet reveal" id="te">
         <header class="sheet__head">
-          <span class="sheet__no">08 / 09</span>
+          <span class="sheet__no">08 / 10</span>
           <span class="sheet__ctx">TE Connectivity AI Cup</span>
         </header>
         <h3 class="sheet__title">AI process control for PTFE liner yield</h3>
@@ -427,7 +427,7 @@
       <!-- 07 PV -->
       <article class="sheet reveal" id="pv">
         <header class="sheet__head">
-          <span class="sheet__no">09 / 09</span>
+          <span class="sheet__no">09 / 10</span>
           <span class="sheet__ctx">Design project</span>
         </header>
         <h3 class="sheet__title">Residential PV system</h3>
@@ -452,10 +452,41 @@
         </div>
       </article>
 
+      <!-- 10 RESEARCH PAPER -->
+      <article class="sheet reveal" id="paper">
+        <header class="sheet__head">
+          <span class="sheet__no">10 / 10</span>
+          <span class="sheet__ctx">Research Project course · Not published</span>
+        </header>
+        <h3 class="sheet__title">Solid-state batteries for EVs: interface membranes</h3>
+        <dl class="brief">
+          <div><dt>Goal</dt><dd>Judge how close solid-state batteries are to EV use, and which electrolyte–electrode interface designs move them closer.</dd></div>
+          <div><dt>Challenge</dt><dd>Thermal management for solid-state batteries is still immature, so there was little direct research to compare.</dd></div>
+          <div><dt>Solution</dt><dd>Reviewed electrolyte types and enhancement methods, then compared three original studies on interface membranes against what an EV needs: low heat generation, long cycle life and high C-rate.</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd>Selected the VAMC LLTO membrane: interfacial resistance <b>853 → 103</b> Ω·cm² (<b>−85%</b>) and <b>98%</b> capacity retained after 50 cycles, against 82% for a planar membrane</dd></div>
+        </dl>
+
+        <div class="sheet__detail">
+          <div class="sheet__text">
+            <p>A single-author review written in IEEE format for HTU's Research Project course. It has not been published. It compares polymer, oxide and sulfide solid electrolytes, looks at 3D printing, composite hybrid electrolytes, interface engineering and thermal management, and explains why interfacial resistance drives heat generation in a solid-state cell.</p>
+            <p>The core of the paper analyses three membrane studies. I picked the one that covered every EV requirement adequately rather than the one that topped any single metric.</p>
+            <ul class="tags"><li>Literature review</li><li>Solid-state batteries</li><li>EIS &amp; cycling data</li><li>IEEE format</li></ul>
+          </div>
+        </div>
+
+        <table class="results results--compare">
+          <thead><tr><th>Membrane</th><th>How it's made</th><th>What it improves</th><th>For EVs</th></tr></thead>
+          <tbody>
+            <tr><td>VAMC LLTO</td><td>Phase inversion through a nylon mesh, sintered at 1350 °C</td><td>Interfacial resistance −85%, capacity 87 → 127 mAh/g, 98% retention after 50 cycles</td><td class="results__place">Selected</td></tr>
+            <tr><td>Bilayer dense–porous LLZO</td><td>Sequential tape casting of a porous and a dense layer</td><td>Much lower internal resistance, higher critical current density, better dendrite resistance</td><td>Strong on fast charging</td></tr>
+            <tr><td>Porous LLZO</td><td>Tape casting, debinding and ultrafast sintering</td><td>Interfacial resistance 24.6 Ω·cm², near-complete dendrite suppression</td><td>Strong on safety</td></tr>
+          </tbody>
+        </table>
+      </article>
+
       <div class="also reveal">
         <p class="label">Also</p>
         <ul>
-          <li><strong>Research paper.</strong> Solid-state batteries for EVs: a review of electrolyte types and interface-membrane designs, judged on what matters for vehicles.</li>
           <li><strong>Battery immersion cooling.</strong> Electrical battery models in Simulink supporting an immersion liquid-cooling study.</li>
         </ul>
       </div>

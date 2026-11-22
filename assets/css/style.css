@@ -137,7 +137,7 @@ p { margin: 0 0 1em; }
 .sheet__head { display: flex; justify-content: space-between; font: 500 12px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 28px; }
 .sheet__no { color: var(--ink); }
 .sheet__no::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--accent); margin-right: 10px; vertical-align: 0; }
-.sheet__title { font-size: clamp(30px, 4vw, 46px); max-width: 18ch; margin-bottom: 14px; }
+.sheet__title { font-size: clamp(30px, 4vw, 46px); max-width: 22ch; margin-bottom: 14px; }
 .sheet__sub { font-size: 18px; color: var(--ink-2); max-width: 40em; margin-bottom: 36px; }
 
 .sheet__grid { display: grid; grid-template-columns: 1fr 300px; gap: 56px; margin-bottom: 36px; }
@@ -184,6 +184,10 @@ p { margin: 0 0 1em; }
 .results td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
 .results__place { font: 500 15px/1.5 var(--mono); color: var(--accent) !important; white-space: nowrap; }
 .results a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+
+.results--compare { margin-top: 0; }
+.results--compare td:first-child { white-space: normal; width: 18%; }
+.results--compare td:nth-child(4) { width: 14%; }
 
 /* pipeline (tyre model) */
 .pipeline { margin: 0; }
