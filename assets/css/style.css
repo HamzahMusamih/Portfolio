@@ -136,6 +136,11 @@ p { margin: 0 0 1em; }
 .tl__body li::before { content: ""; position: absolute; left: 0; top: 0.75em; width: 8px; height: 1px; background: var(--ink); }
 .tl__tools { margin: 14px 0 0; font: 400 12.5px/1.6 var(--mono); color: var(--muted); }
 
+.toolkit { margin-top: 72px; border-top: 1.5px solid var(--rule-strong); padding-top: 28px; }
+.toolkit dl { margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.toolkit dt { font: 500 12px/1.4 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); margin-bottom: 8px; }
+.toolkit dd { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+
 /* ---------- project sheets ---------- */
 .sheet { border-top: 1.5px solid var(--rule-strong); padding: 28px 0 88px; }
 .sheet:last-of-type { padding-bottom: 64px; }
@@ -225,6 +230,7 @@ p { margin: 0 0 1em; }
   .numbers { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0 24px; }
   .numbers div + div { border-top: 0; padding-top: 2px; }
   .also ul { grid-template-columns: 1fr; }
+  .toolkit dl { grid-template-columns: 1fr 1fr; }
   .contact__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
