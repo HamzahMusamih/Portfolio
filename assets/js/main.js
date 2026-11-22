@@ -65,6 +65,11 @@
     drawLine();
   }
 
+  // Close the projects menu after choosing a project
+  document.querySelectorAll('.nav__menu a').forEach(function (a) {
+    a.addEventListener('click', function () { a.blur(); });
+  });
+
   // Lightbox
   var box = document.querySelector('.lightbox');
   if (box && typeof box.showModal === 'function') {

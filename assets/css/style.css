@@ -64,6 +64,30 @@ p { margin: 0 0 1em; }
 }
 .nav a:hover::after { transform: scaleX(1); }
 
+/* projects dropdown */
+.nav { align-items: center; }
+.nav__drop { position: relative; }
+.nav__caret { font-size: 10px; margin-left: 2px; display: inline-block; transition: transform .2s ease; }
+.nav__menu {
+  position: absolute; right: -16px; top: 100%; padding-top: 14px;
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity .18s ease, transform .18s ease, visibility 0s linear .18s;
+}
+.nav__menu ol {
+  list-style: none; margin: 0; padding: 6px 0; min-width: 300px;
+  background: var(--paper); border: 1.5px solid var(--ink); box-shadow: 0 10px 28px rgba(23,25,28,.12);
+}
+.nav__menu a { display: flex; gap: 14px; padding: 9px 16px; font-size: 14px; color: var(--ink); text-decoration: none; }
+.nav__menu a::after { display: none; }
+.nav__menu a span { font: 500 11.5px/1.7 var(--mono); color: var(--muted); }
+.nav__menu a:hover, .nav__menu a:focus-visible { background: var(--paper-2); }
+.nav__menu a:hover span { color: var(--accent); }
+.nav__drop:hover .nav__menu, .nav__drop:focus-within .nav__menu {
+  opacity: 1; visibility: visible; transform: none; transition: opacity .18s ease, transform .18s ease;
+}
+.nav__drop:hover .nav__caret, .nav__drop:focus-within .nav__caret { transform: rotate(180deg); }
+.sheet, #experience, #projects, #contact { scroll-margin-top: 72px; }
+
 /* ---------- hero ---------- */
 .hero {
   border-bottom: 1px solid var(--rule-strong);
@@ -259,7 +283,8 @@ p { margin: 0 0 1em; }
   .contact__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .nav a:nth-child(3) { display: none; }
+  .nav > a:last-child { display: none; }
+  .nav__menu { right: -60px; }
   .timeline__track { left: 5px; }
   .tl { grid-template-columns: 1fr; padding-left: 30px; padding-bottom: 40px; }
   .tl::before { left: 5px; }
