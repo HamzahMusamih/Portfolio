@@ -48,15 +48,6 @@
     </div>
   </section>
 
-  <!-- TELEMETRY STRIP -->
-  <section class="telemetry" aria-label="Selected results">
-    <div class="wrap telemetry__grid">
-      <div class="stat"><span class="stat__num"><i>−</i><b data-count="40">40</b><i>%</i></span><span class="stat__label">Accumulator container mass vs previous designs</span></div>
-      <div class="stat"><span class="stat__num"><i>−</i><b data-count="90">90</b><i>%</i></span><span class="stat__label">Battery simulation runtime after solver and model rework</span></div>
-      <div class="stat"><span class="stat__num"><b data-count="3.5" data-decimals="1">3.5</b><i>×</i></span><span class="stat__label">Longer electrode life in seawater, coated vs bare</span></div>
-      <div class="stat"><span class="stat__num"><b data-count="45">45</b><i>+</i></span><span class="stat__label">Students led to the team's first FS EV Class entry</span></div>
-    </div>
-  </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" class="section">
@@ -75,7 +66,7 @@
             <h3>Solar &amp; Battery Storage Designer</h3>
             <p class="tl__org">Dynamic Eco Home · Dallas, TX (remote)</p>
             <ul>
-              <li>Design residential PV and battery storage systems end to end: 3D rooftop models from drone photogrammetry, shading and irradiance analysis, load calculations and battery sizing.</li>
+              <li>Design residential PV and battery storage systems end to end: 3D rooftop models from drone photogrammetry in Scanifly, shading and irradiance analysis, load calculations and battery sizing.</li>
               <li>Produce permit-ready plansets for Texas authorities: roof layouts, azimuth and tilt, fire setbacks, structural attachments and electrical single-line diagrams with conductor and breaker specs.</li>
               <li>Generate bills of materials and production reports, and support field teams during installation.</li>
             </ul>
@@ -88,6 +79,7 @@
             <h3>Technical Director</h3>
             <p class="tl__org">HTU Racing · Formula Student EV</p>
             <ul>
+              <li>Led the technical side of the FSUK 2026 Concept Class entry: 4th overall, 1st in Cost &amp; Manufacturing, 2nd in Engineering Design and 3rd in Real World AI.</li>
               <li>Defined the EV architecture and interfaces across 80+ components, coordinating accumulator, cooling, mechanical and electrical drivetrain.</li>
               <li>Developed the team's first digital twin, combining vehicle dynamics, powertrain, controls and aerodynamics in one simulation.</li>
               <li>Introduced five standard documentation templates; 4 of 8 proposed concepts reached the car after structured feasibility reviews.</li>
@@ -166,7 +158,7 @@
         <dl>
           <div><dt>Simulation &amp; modelling</dt><dd>MATLAB/Simulink, Simscape, Vehicle Physics Pro, OptimumLap, IPG CarMaker, Ansys</dd></div>
           <div><dt>CAD &amp; design</dt><dd>SolidWorks, Fusion 360, SketchUp</dd></div>
-          <div><dt>Energy &amp; power</dt><dd>PV design (PVsyst), battery storage sizing, EV powertrain, battery thermal and electrical modelling</dd></div>
+          <div><dt>Energy &amp; power</dt><dd>PV design (Scanifly, PVsyst), battery storage sizing, EV powertrain, battery thermal and electrical modelling</dd></div>
           <div><dt>Data &amp; management</dt><dd>Power BI, Python, MS Project, stakeholder management</dd></div>
         </dl>
       </div>
@@ -181,10 +173,40 @@
         <h2>Selected work</h2>
       </div>
 
+      <!-- 01 FSUK 2026 -->
+      <article class="sheet reveal" id="fsuk">
+        <header class="sheet__head">
+          <span class="sheet__no">01 / 09</span>
+          <span class="sheet__ctx">Formula Student UK · July 2026</span>
+        </header>
+        <h3 class="sheet__title">FSUK 2026 Concept Class</h3>
+        <p class="sheet__sub">As Technical Director, I led the technical side of HTU Racing's entry at Silverstone. The team finished 4th overall with podiums in three events.</p>
+
+        <div class="sheet__grid">
+          <div class="sheet__text">
+            <p>Concept Class teams are judged on the design, cost and business case of a car before it is built. My job was to make the design hang together across every system, and to make sure the people presenting it could defend it.</p>
+            <table class="results">
+              <thead><tr><th>Event</th><th>Place</th><th>My part</th></tr></thead>
+              <tbody>
+                <tr><td>Cost &amp; Manufacturing</td><td class="results__place">1st</td><td>Relayed all technical information from the design team to the custom-manufacturing team and supplied the data they needed to verify our manufacturing procedures. Came up with every cost-saving solution we presented for the <a href="https://www.imeche.org/news/news-article/fs2026-cost-manufacturing-concept-class-real-world-task" target="_blank" rel="noopener">real-world task</a>: cut the bill-of-materials spend by 10% without compromising the project's goals.</td></tr>
+                <tr><td>Engineering Design</td><td class="results__place">2nd</td><td>Responsible for everything presented. Coordinated research, development and design so the systems lined up, and prepared each member to explain their work with an engineering argument inside the time limit. Presented the battery cell selection and pack configuration myself.</td></tr>
+                <tr><td>Real World AI</td><td class="results__place">3rd</td><td>Developed and presented the technical half of the presentation, drawing on a system-level view of our AI system and its requirements.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <dl class="numbers">
+            <div><dt>4th</dt><dd>overall in the Concept Class</dd></div>
+            <div><dt>1st</dt><dd>Cost &amp; Manufacturing</dd></div>
+            <div><dt>2nd</dt><dd>Engineering Design</dd></div>
+            <div><dt>3rd</dt><dd>Real World AI</dd></div>
+          </dl>
+        </div>
+      </article>
+
       <!-- 01 ELECTROLYZER -->
       <article class="sheet reveal" id="electrolyzer">
         <header class="sheet__head">
-          <span class="sheet__no">01 / 07</span>
+          <span class="sheet__no">02 / 09</span>
           <span class="sheet__ctx">Capstone · 2025–26</span>
         </header>
         <h3 class="sheet__title">Seawater electrolyzer &amp; degradation model</h3>
@@ -217,22 +239,23 @@
       <!-- 02 BATTERY -->
       <article class="sheet reveal" id="battery">
         <header class="sheet__head">
-          <span class="sheet__no">02 / 07</span>
+          <span class="sheet__no">03 / 09</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
-        <h3 class="sheet__title">Battery model development</h3>
-        <p class="sheet__sub">Physics-based cell and pack simulation used to choose the cells for the team's second EV, extended into on-car state-of-charge estimation.</p>
+        <h3 class="sheet__title">Battery cell selection &amp; modelling</h3>
+        <p class="sheet__sub">Choosing the cells for the team's second EV from 20 candidates, using physics-based pack simulation, then extending the models into on-car state-of-charge estimation.</p>
 
         <div class="sheet__grid">
           <div class="sheet__text">
             <p>Usable cell models don't exist for most candidate cells, and none capture full-pack geometry and cooling. I extracted look-up tables from datasheets, built packs in MATLAB's Battery Builder, and drove them with throttle and brake traces recorded from an FSUK track in Assetto Corsa, reshaped into real power demand.</p>
+            <p>I ranked the cells against pack targets (under 30 kg, over 5.6 kWh, over 60 kW continuous), then ran the finalists through a full endurance event in Simscape and Voltt, comparing state of charge, temperature rise, voltage sag and peak-power maps. The Samsung 50U and EVE 50PL came out on top; I presented this selection to the judges at FSUK 2026.</p>
             <p>I then fitted 2RC equivalent-circuit parameters from virtual pulse tests at nine temperatures (20–60 °C). The resulting tables feed an Extended Kalman Filter for SOC estimation on a 96s4p NMC pack.</p>
-            <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Battery Builder</li><li>2RC ECM + EKF</li></ul>
+            <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Battery Builder</li><li>Voltt</li><li>2RC ECM + EKF</li></ul>
           </div>
           <dl class="numbers">
             <div><dt>−90%</dt><dd>simulation runtime after reworking the cell models and solver</dd></div>
             <div><dt>+60%</dt><dd>analytical data behind the cell selection</dd></div>
-            <div><dt>9</dt><dd>temperatures characterised for the ECM look-up tables</dd></div>
+            <div><dt>20</dt><dd>cylindrical cells screened before simulation</dd></div>
           </dl>
         </div>
 
@@ -243,10 +266,49 @@
         </div>
       </article>
 
+      <!-- 04 TYRE -->
+      <article class="sheet reveal" id="tyre">
+        <header class="sheet__head">
+          <span class="sheet__no">04 / 09</span>
+          <span class="sheet__ctx">Formula Student · Digital twin</span>
+        </header>
+        <h3 class="sheet__title">Tyre model for the digital twin</h3>
+        <p class="sheet__sub">A Magic Formula 6.1 model of the team's Hoosier 16×7.5-10 R20 tyre, fitted from Tyre Test Consortium bench data, so the vehicle simulation corners and brakes on a real tyre.</p>
+
+        <div class="sheet__grid">
+          <div class="sheet__text">
+            <p>Raw bench data can't be fitted as delivered: it contains aborted runs, transitions between conditions, pressure dips and machine vibration, and there is no drive/brake data at all for our tyre size. I wrote a MATLAB pipeline that cleans it, cuts it into sweeps, groups the test conditions, rejects impure samples and filters the once-per-revolution ripple, then hands SI/ISO data to the open-source Magic Formula Tyre Tool.</p>
+            <p>For combined slip I borrowed drive/brake runs from an 18×6.0 tyre and scaled its lateral force to match ours at zero slip, so the fit learns only the shape of the grip trade-off, not the other tyre's grip level. A custom parser and start-up checker let teammates re-fit the model themselves.</p>
+            <ul class="tags"><li>MATLAB</li><li>Magic Formula 6.1</li><li>FSAE TTC data</li><li>Signal processing</li></ul>
+          </div>
+          <dl class="numbers">
+            <div><dt>9</dt><dd>stages in the data-preparation pipeline</dd></div>
+            <div><dt>6</dt><dd>force and moment fits: pure and combined Fx, Fy, plus Mz and Mx</dd></div>
+            <div><dt>.tir</dt><dd>output, read directly by the vehicle simulation</dd></div>
+          </dl>
+        </div>
+
+        <figure class="pipeline">
+          <ol>
+            <li><span>01</span>Load &amp; convert to SI</li>
+            <li><span>02</span>Keep valid samples</li>
+            <li><span>03</span>Split into sweeps</li>
+            <li><span>04</span>Find test levels</li>
+            <li><span>05</span>Purity check</li>
+            <li><span>06</span>Select conditions</li>
+            <li><span>07</span>Ripple filter</li>
+            <li><span>08</span>Scale combined F<sub>y</sub></li>
+            <li><span>09</span>Export for fitting</li>
+            <li class="pipeline__out"><span>→</span>MF 6.1 fit · .tir</li>
+          </ol>
+          <figcaption>Data-preparation pipeline. Measured data isn't shown: TTC data is licensed to consortium members only.</figcaption>
+        </figure>
+      </article>
+
       <!-- 03 TSAC -->
       <article class="sheet reveal" id="tsac">
         <header class="sheet__head">
-          <span class="sheet__no">03 / 07</span>
+          <span class="sheet__no">05 / 09</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Tractive-system accumulator container</h3>
@@ -274,7 +336,7 @@
       <!-- 04 SPROCKET -->
       <article class="sheet reveal" id="sprocket">
         <header class="sheet__head">
-          <span class="sheet__no">04 / 07</span>
+          <span class="sheet__no">06 / 09</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
         <h3 class="sheet__title">Differential sprocket adapter</h3>
@@ -301,7 +363,7 @@
       <!-- 05 VPP -->
       <article class="sheet reveal" id="vpp">
         <header class="sheet__head">
-          <span class="sheet__no">05 / 07</span>
+          <span class="sheet__no">07 / 09</span>
           <span class="sheet__ctx">Venture concept</span>
         </header>
         <h3 class="sheet__title">Virtual power plant dispatch optimiser</h3>
@@ -328,7 +390,7 @@
       <!-- 06 TE -->
       <article class="sheet reveal" id="te">
         <header class="sheet__head">
-          <span class="sheet__no">06 / 07</span>
+          <span class="sheet__no">08 / 09</span>
           <span class="sheet__ctx">TE Connectivity AI Cup</span>
         </header>
         <h3 class="sheet__title">AI process control for PTFE liner yield</h3>
@@ -356,7 +418,7 @@
       <!-- 07 PV -->
       <article class="sheet reveal" id="pv">
         <header class="sheet__head">
-          <span class="sheet__no">07 / 07</span>
+          <span class="sheet__no">09 / 09</span>
           <span class="sheet__ctx">Design project</span>
         </header>
         <h3 class="sheet__title">Residential PV system</h3>

@@ -1,5 +1,5 @@
 /* Hamzah Musamih — portfolio
-   Paper + ink drawing sheet, with dark telemetry panels. One accent. */
+   Paper + ink drawing sheet, with dark panels. One accent. */
 
 :root {
   --paper: #f3f1eb;
@@ -97,16 +97,6 @@ p { margin: 0 0 1em; }
 .titleblock__foot th, .titleblock__foot td { border-bottom: 0; border-top: 1.5px solid var(--rule-strong); font-family: var(--mono); font-size: 12px; }
 .dot { display: inline-block; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; margin: 0 8px 1px; }
 
-/* ---------- telemetry strip ---------- */
-.telemetry { background: var(--panel); color: var(--panel-ink); }
-.telemetry__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-.stat { padding: 36px 24px 32px; border-left: 1px solid #2a2d31; }
-.stat:first-child { border-left: 0; padding-left: 0; }
-.stat__num { display: block; font: 500 clamp(34px, 4.4vw, 52px)/1 var(--mono); letter-spacing: -0.03em; margin-bottom: 12px; font-variant-numeric: tabular-nums; }
-.stat__num b { font-weight: 500; }
-.stat__num i { font-style: normal; color: var(--accent); }
-.stat__label { display: block; font-size: 13.5px; line-height: 1.45; color: var(--panel-muted); max-width: 22ch; }
-
 /* ---------- sections ---------- */
 .section { padding: clamp(72px, 10vw, 128px) 0; border-bottom: 1px solid var(--rule-strong); }
 .section__head { display: flex; flex-direction: column; margin-bottom: 56px; }
@@ -175,6 +165,23 @@ p { margin: 0 0 1em; }
 .shot:hover img, .shot:focus-visible img { border-color: var(--ink); }
 .shot:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
+/* results table (FSUK) */
+.results { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 14.5px; }
+.results th { text-align: left; font: 500 11px/1.4 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 0 12px 10px 0; border-bottom: 1.5px solid var(--rule-strong); }
+.results td { vertical-align: top; padding: 14px 16px 14px 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
+.results td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+.results__place { font: 500 15px/1.5 var(--mono); color: var(--accent) !important; white-space: nowrap; }
+.results a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+
+/* pipeline (tyre model) */
+.pipeline { margin: 0; }
+.pipeline ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+.pipeline li { border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 14px 14px 16px; font-size: 14px; line-height: 1.35; background: var(--paper); min-height: 78px; }
+.pipeline li span { display: block; font: 500 11px/1 var(--mono); color: var(--muted); margin-bottom: 10px; letter-spacing: 0.06em; }
+.pipeline .pipeline__out { background: var(--panel); color: var(--panel-ink); }
+.pipeline .pipeline__out span { color: var(--accent); }
+.pipeline figcaption { margin-top: 12px; font: 400 12px/1.5 var(--mono); color: var(--muted); }
+
 /* 3D viewer */
 .viewer { margin: 0 0 16px; background: var(--panel); color: var(--panel-muted); border: 1px solid var(--panel); }
 .viewer model-viewer {
@@ -222,14 +229,12 @@ p { margin: 0 0 1em; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .hero__grid { grid-template-columns: 1fr; gap: 40px; }
-  .telemetry__grid { grid-template-columns: 1fr 1fr; }
-  .stat { padding: 28px 16px; }
-  .stat:nth-child(odd) { border-left: 0; padding-left: 0; }
-  .stat:nth-child(n+3) { border-top: 1px solid #2a2d31; }
   .sheet__grid { grid-template-columns: 1fr; gap: 28px; }
   .numbers { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0 24px; }
   .numbers div + div { border-top: 0; padding-top: 2px; }
   .also ul { grid-template-columns: 1fr; }
+  .pipeline ol { grid-template-columns: 1fr 1fr; }
+  .results td:first-child { white-space: normal; }
   .toolkit dl { grid-template-columns: 1fr 1fr; }
   .contact__grid { grid-template-columns: 1fr; }
 }
