@@ -119,6 +119,7 @@ p { margin: 0 0 1em; }
   color: var(--muted); border-right: 1px solid var(--rule); padding-top: 11px;
 }
 .titleblock__foot th, .titleblock__foot td { border-bottom: 0; border-top: 1.5px solid var(--rule-strong); font-family: var(--mono); font-size: 12px; }
+.titleblock tr:last-child th, .titleblock tr:last-child td { border-bottom: 0; }
 .dot { display: inline-block; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; margin: 0 8px 1px; }
 
 /* ---------- sections ---------- */
@@ -143,6 +144,8 @@ p { margin: 0 0 1em; }
 .tl--edu::before { border-radius: 0; transform: translateX(-50%) rotate(45deg); }
 .tl__when { font: 500 13px/1.4 var(--mono); color: var(--muted); padding: 4px 32px 0 0; }
 .tl__body { padding-left: 40px; max-width: 720px; }
+.tl__dur { display: block; margin-top: 4px; font-size: 12px; color: var(--accent); }
+.tl__dur:empty { display: none; }
 .tl__body h3 { font-size: 26px; margin-bottom: 4px; }
 .tl__org { color: var(--muted); margin-bottom: 14px; font-size: 15px; }
 .tl__body ul { margin: 0; padding: 0; list-style: none; }

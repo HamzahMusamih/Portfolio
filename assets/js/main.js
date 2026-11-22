@@ -65,6 +65,21 @@
     drawLine();
   }
 
+  // Durations on the timeline (inclusive months, e.g. Mar–Nov = 9 mo)
+  document.querySelectorAll('.tl__when[data-start]').forEach(function (el) {
+    var out = el.querySelector('.tl__dur');
+    if (!out || !el.dataset.end) return;
+    var s = el.dataset.start.split('-').map(Number);
+    var now = new Date();
+    var e = el.dataset.end === 'now' ? [now.getFullYear(), now.getMonth() + 1] : el.dataset.end.split('-').map(Number);
+    var m = (e[0] - s[0]) * 12 + (e[1] - s[1]) + 1;
+    if (m < 1) return;
+    var y = Math.floor(m / 12), r = m % 12, txt = [];
+    if (y) txt.push(y + ' yr');
+    if (r) txt.push(r + ' mo');
+    out.textContent = txt.join(' ');
+  });
+
   // Close the projects menu after choosing a project
   document.querySelectorAll('.nav__menu a').forEach(function (a) {
     a.addEventListener('click', function () { a.blur(); });
