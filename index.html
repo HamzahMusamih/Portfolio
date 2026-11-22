@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/style.css?v=202611222141">
+<link rel="stylesheet" href="assets/css/style.css?v=202611230006">
 <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
@@ -83,10 +83,11 @@
             <h3>Senior Design Engineer</h3>
             <p class="tl__org">Dynamic Eco Home · Dallas, TX (remote) · promoted from Solar &amp; Battery Storage Designer, Nov 2026</p>
             <ul>
+              <li>Designed and produced plansets for 200+ residential projects.</li>
               <li>Design residential PV and battery storage systems end to end: 3D rooftop models from drone photogrammetry in Scanifly, shading and irradiance analysis, load calculations and battery sizing.</li>
               <li>Produce permit-ready plansets for Texas authorities: roof layouts, azimuth and tilt, fire setbacks, structural attachments, to-scale elevations with equipment modelling and placement, conduit runs and wiring, and single-line diagrams with conductor and breaker specs.</li>
-              <li>Generate bills of system, detailed material take-offs that go beyond the main equipment down to conduit, fittings and nipples, along with production reports.</li>
-              <li>Verify other designers' projects, manage the subcontractors who check them and give them the information they need, and answer the design team's technical questions.</li>
+              <li>Generate bills of system (BoS) and bills of materials (BoM): detailed take-offs that go beyond the main equipment down to conduit, fittings and nipples, along with production reports.</li>
+              <li>Verify team members' projects, manage subcontractors and verify their projects, give them the information they need, and answer the design team's technical questions.</li>
             </ul>
           </div>
         </li>
@@ -97,8 +98,8 @@
             <h3>Technical Director</h3>
             <p class="tl__org">HTU Racing · Formula Student EV</p>
             <ul>
-              <li>Led the technical side of the FSUK 2026 Concept Class entry: 4th overall, 1st in Cost &amp; Manufacturing, 2nd in Engineering Design and 3rd in Real World AI.</li>
-              <li>Defined the EV architecture and interfaces across 80+ components, coordinating accumulator, cooling, mechanical and electrical drivetrain.</li>
+              <li>Led the technical side of the FSUK 2026 Concept Class entry against 80+ teams: 4th overall, 1st in Cost &amp; Manufacturing, 2nd in Engineering Design and 3rd in Real World AI.</li>
+              <li>Defined the EV architecture and interfaces across 80+ components, coordinating the accumulator, cooling, mechanical and electrical drivetrain, which I focused on as powertrain system lead.</li>
               <li>Developed the team's first digital twin, combining vehicle dynamics, powertrain, controls and aerodynamics in one simulation.</li>
               <li>Introduced five standard documentation templates; 4 of 8 proposed concepts reached the car after structured feasibility reviews.</li>
             </ul>
@@ -122,13 +123,14 @@
         <li class="tl reveal">
           <div class="tl__when">2023 — 2026</div>
           <div class="tl__body">
-            <h3>Powertrain Engineer</h3>
-            <p class="tl__org">HTU Racing · Formula Student EV</p>
+            <h3>Powertrain Engineer → System Lead</h3>
+            <p class="tl__org">HTU Racing · Formula Student EV · powertrain system lead since Aug 2025</p>
             <ul>
               <li>Built thermal and electrical battery models in Simscape that raised the data behind cell selection by 60%.</li>
               <li>Reduced simulation runtime by 90% by reworking cell models and solver setup.</li>
               <li>Designed the accumulator container and its insulation, fixed current-path issues and supported motor and inverter integration.</li>
               <li>Removed 10 kg of structural mass using FEA and topology optimisation.</li>
+              <li>Developing custom maintenance plugs that save cost and space, cut accumulator container mass by 5% and improve thermal performance.</li>
             </ul>
             <p class="tl__tools">MATLAB/Simulink · Simscape · SolidWorks · Ansys · Fusion 360</p>
           </div>
@@ -201,7 +203,7 @@
           <div><dt>Goal</dt><dd>Lead the technical side of HTU Racing's Concept Class entry at FSUK 2026.</dd></div>
           <div><dt>Challenge</dt><dd>Make every system's design line up and hold up in front of industry judges, across the design, cost and AI events.</dd></div>
           <div><dt>Solution</dt><dd>Coordinated research and design, relayed technical data to the manufacturing team, devised the cost-cutting plan, and presented the battery selection and the AI system's technical side.</dd></div>
-          <div class="brief__res"><dt>Results</dt><dd><b>4th</b> overall · <b>1st</b> Cost &amp; Manufacturing · <b>2nd</b> Engineering Design · <b>3rd</b> Real World AI</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd>Against <b>80+</b> teams: <b>4th</b> overall · <b>1st</b> Cost &amp; Manufacturing · <b>2nd</b> Engineering Design · <b>3rd</b> Real World AI</dd></div>
         </dl>
 
         <div class="sheet__detail">
@@ -227,17 +229,18 @@
         <h3 class="sheet__title">FS battery cell selection &amp; modelling</h3>
         <dl class="brief">
           <div><dt>Goal</dt><dd>Choose the best cells for the team's second EV battery pack.</dd></div>
-          <div><dt>Challenge</dt><dd>Usable cell models don't exist, and none capture pack geometry, cooling or a real endurance load.</dd></div>
-          <div><dt>Solution</dt><dd>Built cell and pack models from datasheets, drove them with recorded track data, and compared the finalists in Simscape and Voltt.</dd></div>
+          <div><dt>Challenge</dt><dd>Usable cell models don't exist, none capture pack geometry, cooling or a real endurance load, and no model of the FSUK endurance track was available anywhere.</dd></div>
+          <div><dt>Solution</dt><dd>Built the endurance track myself: traced its outline in AutoCAD, scaled it to the rulebook's minimum and maximum track widths, and imported the polyline into OptimumLap's track builder. Then built cell and pack models from datasheets and compared the finalists over that track in Simscape and Voltt.</dd></div>
           <div class="brief__res"><dt>Results</dt><dd><b>20</b> cells screened · simulation runtime cut <b>90%</b> · <b>60%</b> more data behind the decision</dd></div>
         </dl>
 
         <div class="sheet__detail">
           <div class="sheet__text">
             <p>Usable cell models don't exist for most candidate cells, and none capture full-pack geometry and cooling. I extracted look-up tables from datasheets, built packs in MATLAB's Battery Builder, and drove them with throttle and brake traces recorded from an FSUK track in Assetto Corsa, reshaped into real power demand.</p>
+            <p>Because no model of the FSUK endurance track existed, I traced the circuit outline in AutoCAD, scaled it so the track widths matched the rulebook's minimum and maximum, and exported the resulting polyline dimensions into OptimumLap's track builder.</p>
             <p>I ranked the cells against pack targets (under 30 kg, over 5.6 kWh, over 60 kW continuous), then ran the finalists through a full endurance event in Simscape and Voltt, comparing state of charge, temperature rise, voltage sag and peak-power maps. The Samsung 50U and EVE 50PL came out on top; I presented this selection to the judges at FSUK 2026.</p>
             <p>I then fitted 2RC equivalent-circuit parameters from virtual pulse tests at nine temperatures (20–60 °C). The resulting tables feed an Extended Kalman Filter for SOC estimation on a 96s4p NMC pack.</p>
-            <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Battery Builder</li><li>Voltt</li><li>2RC ECM + EKF</li></ul>
+            <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Battery Builder</li><li>Voltt</li><li>AutoCAD</li><li>OptimumLap</li><li>2RC ECM + EKF</li></ul>
           </div>
         </div>
 
@@ -259,14 +262,14 @@
         <h3 class="sheet__title">FS battery &amp; busbar thermal model</h3>
         <dl class="brief">
           <div><dt>Goal</dt><dd>Give the digital twin an accurate battery model that includes busbar and current-path heating, and use it to size the busbars.</dd></div>
-          <div><dt>Challenge</dt><dd>Cell models ignore the heat added by busbars and welded joints, which grows with current squared and rises as the copper warms.</dd></div>
-          <div><dt>Solution</dt><dd>An EVE 50PL cell model built on Voltt's P45B Simscape framework, coupled to a copper busbar with temperature-dependent Joule heating, weld-contact heating and convection.</dd></div>
+          <div><dt>Challenge</dt><dd>No MATLAB model existed for the EVE 50PL, so its equivalent-circuit model had to be built from raw Voltt pulse and power-map test data. On top of that, cell models ignore the heat from busbars and welded joints, which grows with current squared.</dd></div>
+          <div><dt>Solution</dt><dd>Processed the Voltt data into 2RC look-up tables, filtering poor fits and extrapolating gaps, and loaded them into Voltt's P45B Simscape framework. Coupled the cell to a copper busbar with temperature-dependent Joule heating, weld-contact heating and convection.</dd></div>
           <div class="brief__res"><dt>Results</dt><dd>Cell parameters at <b>9</b> temperatures (20–60 °C) and <b>100</b> SOC points · scaled to the <b>96s4p</b> pack · busbar and weld heat logged against current to guide busbar design</dd></div>
         </dl>
 
         <div class="sheet__detail">
           <div class="sheet__text">
-            <p>I extracted 2RC equivalent-circuit look-up tables for the EVE 50PL from Voltt virtual pulse tests and loaded them into the Voltt (About:Energy) ECM block, which originally shipped with Molicel P45B parameters. The digital twin's lap power demand is converted to pack current through the simulated pack voltage, so current rises as the voltage sags, as it does on the car.</p>
+            <p>No MATLAB model existed for the EVE 50PL, so I built one: I processed Voltt pulse and power-map test data at nine temperatures into 2RC equivalent-circuit look-up tables, filtering out poor fits and extrapolating where the data ran out, and loaded them into the Voltt (About:Energy) ECM block, which originally shipped with Molicel P45B parameters. The digital twin's lap power demand is converted to pack current through the simulated pack voltage, so current rises as the voltage sags, as it does on the car.</p>
             <p>The cell's thermal port is coupled to a copper busbar thermal mass. Two heat sources act on it: Joule heating I²R₀(1 + αΔT) with copper's temperature coefficient, and contact heating at the welded cell joints. The busbar loses heat by mixed convection, with the coefficient read from a temperature-dependent table. The model logs cell and busbar temperatures and both heat sources, and runs inside the digital twin as its battery model.</p>
             <ul class="tags"><li>MATLAB / Simulink</li><li>Simscape</li><li>Voltt (About:Energy)</li><li>Thermal modelling</li></ul>
           </div>
@@ -288,7 +291,7 @@
         </header>
         <h3 class="sheet__title">FS tyre model for the digital twin</h3>
         <dl class="brief">
-          <div><dt>Goal</dt><dd>Give the digital twin a realistic tyre model.</dd></div>
+          <div><dt>Goal</dt><dd>Give the digital twin an accurate tyre model: the basis for predicting lateral and longitudinal forces and their limits, spotting excessive slip, and judging overall vehicle performance.</dd></div>
           <div><dt>Challenge</dt><dd>Raw bench data is noisy and incomplete, with no drive/brake data for our tyre size.</dd></div>
           <div><dt>Solution</dt><dd>A nine-stage MATLAB cleaning pipeline and a Magic Formula 6.1 fit, borrowing the combined-slip shape from a similar tyre.</dd></div>
           <div class="brief__res"><dt>Results</dt><dd><b>9</b>-stage pipeline · <b>6</b> fitted force and moment models · one <b>.tir</b> file read directly by the vehicle simulation</dd></div>
@@ -315,8 +318,13 @@
             <li><span>09</span>Export for fitting</li>
             <li class="pipeline__out"><span>→</span>MF 6.1 fit · .tir</li>
           </ol>
-          <figcaption>Data-preparation pipeline. Measured data isn't shown: TTC data is licensed to consortium members only.</figcaption>
         </figure>
+
+        <div class="gallery" style="margin-top:20px">
+          <button class="shot" data-full="assets/img/tyre-1.webp"><img src="assets/img/tyre-1.webp" alt="Fitted longitudinal force against slip ratio" loading="lazy"><span>Longitudinal force vs slip ratio</span></button>
+          <button class="shot" data-full="assets/img/tyre-2.webp"><img src="assets/img/tyre-2.webp" alt="Fitted lateral force against slip angle" loading="lazy"><span>Lateral force vs slip angle</span></button>
+          <button class="shot" data-full="assets/img/tyre-3.webp"><img src="assets/img/tyre-3.webp" alt="Friction ellipse from the fitted model" loading="lazy"><span>Friction ellipse</span></button>
+        </div>
       </article>
 
       <article class="sheet reveal" id="tsac">
@@ -324,16 +332,17 @@
           <span class="sheet__no">05 / 11</span>
           <span class="sheet__ctx">Formula Student</span>
         </header>
-        <h3 class="sheet__title">FS tractive-system accumulator container</h3>
+        <h3 class="sheet__title">FS tractive-system accumulator container (TSAC)</h3>
         <dl class="brief">
-          <div><dt>Goal</dt><dd>A light, crash-rated container for the battery pack and its high-voltage safety systems.</dd></div>
+          <div><dt>Goal</dt><dd>Design the team's first accumulator container, with no prior team knowledge or experience: light, crash-rated, and housing the battery pack and its high-voltage safety systems.</dd></div>
           <div><dt>Challenge</dt><dd>The chassis was designed before the accumulator was sized, leaving a volume never meant for it.</dd></div>
           <div><dt>Solution</dt><dd>Designed the ideal enclosure first, then cut it down to fit the chassis while keeping a safety margin.</dd></div>
-          <div class="brief__res"><dt>Results</dt><dd><b>40%</b> lighter than previous designs · factor of safety <b>1.55</b> under crash loads · <b>100%</b> of components fitted</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>40%</b> lighter than previous designs · factor of safety <b>1.55</b> under crash loads · <b>100%</b> of components fitted · second version now in design for the new car</dd></div>
         </dl>
 
         <div class="sheet__detail">
           <div class="sheet__text">
+            <p>This was the first accumulator container the team ever designed, built up from zero prior knowledge. I'm now working on its second version for the new car.</p>
             <p>The chassis had been designed before the accumulator was sized, so everything had to fit a volume that was never meant for it, and the container still had to survive crash loads. I first designed the ideal enclosure for the pack and its safety devices, then cut it down to the chassis, trading some ease of assembly and maintenance for fit while keeping a margin in case the built chassis differed from CAD.</p>
             <ul class="tags"><li>SolidWorks</li><li>Ansys FEA</li><li>FSAE EV rules</li></ul>
           </div>
@@ -478,14 +487,14 @@
       <article class="sheet reveal" id="te">
         <header class="sheet__head">
           <span class="sheet__no">10 / 11</span>
-          <span class="sheet__ctx">TE Connectivity AI Cup</span>
+          <span class="sheet__ctx">TE Connectivity AI Cup · 3rd worldwide</span>
         </header>
         <h3 class="sheet__title">AI process control for PTFE liner yield</h3>
         <dl class="brief">
           <div><dt>Goal</dt><dd>Raise yield in PTFE catheter-liner manufacturing.</dd></div>
           <div><dt>Challenge</dt><dd>Hidden multi-parameter interactions and noisy data that throw up misleading correlations.</dd></div>
           <div><dt>Solution</dt><dd>A causal AI workflow with an engineering-validation layer that kept only physically grounded process levers.</dd></div>
-          <div class="brief__res"><dt>Results</dt><dd><b>−6.4 pp</b> yield loss · <b>~$2.9M</b> estimated yearly savings · <b>~46%</b> fewer PTFE failures</dd></div>
+          <div class="brief__res"><dt>Results</dt><dd><b>3rd</b> worldwide against <b>100+</b> teams · <b>−6.4 pp</b> yield loss · <b>~$2.9M</b> estimated yearly savings · <b>~46%</b> fewer PTFE failures</dd></div>
         </dl>
 
         <div class="sheet__detail">
@@ -563,6 +572,6 @@
   <img alt="">
 </dialog>
 
-<script src="assets/js/main.js?v=202611222141"></script>
+<script src="assets/js/main.js?v=202611230006"></script>
 </body>
 </html>
