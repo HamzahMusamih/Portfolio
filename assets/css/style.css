@@ -192,6 +192,9 @@ p { margin: 0 0 1em; }
 
 /* gallery */
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px 16px; }
+.gallery__note { font: 400 13px/1.5 var(--mono); color: var(--muted); margin: 0 0 14px; max-width: 80ch; }
+.also__note { margin: 28px 0 0; color: var(--ink-2); }
+.also__note a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .gallery--2 { grid-template-columns: repeat(2, 1fr); }
 .gallery--2 .shot img { aspect-ratio: 16 / 9; }
 .shot {
